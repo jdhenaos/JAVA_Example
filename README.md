@@ -1,5 +1,5 @@
 # JAVA_Example
-This is a code to learn JAVA creating a pet shop.
+There are a codes to learn JAVA.
 
 This project was created by:
 
