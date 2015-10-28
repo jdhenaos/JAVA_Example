@@ -22,17 +22,5 @@ public class Jugador {
 		return imprimirJugador;
 	}
 	
-	public int getTurno(){
-		if(jugador == 0){
-			jugador = 1;
-			return jugador;
-		} else if(jugador == 1){
-			jugador = 2;
-			return jugador;
-		}else{
-			jugador = 1;
-			return jugador;
-		}
-	}
 
 }
