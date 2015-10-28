@@ -37,11 +37,12 @@ public class GUI extends JFrame {
 			}
 		});
 	}
-
+	
 	/**
 	 * Create the frame.
 	 */
 	public GUI() {
+		
 		setTitle("TIC-TAC-TOE EXTREME");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 323, 330);
@@ -51,24 +52,70 @@ public class GUI extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+		textField = new JTextField();
+		textField.setFont(new Font("Dialog", Font.BOLD, 14));
+		textField.setForeground(Color.CYAN);
+		textField.setBackground(Color.LIGHT_GRAY);
+		textField.setEditable(false);
+		textField.setBounds(69, 278, 114, 19);
+		contentPane.add(textField);
+		textField.setColumns(10);
+		
 		final JButton btnNewButton = new JButton("");
 		btnNewButton.setBackground(Color.LIGHT_GRAY);
 		btnNewButton.setFont(new Font("Dialog", Font.BOLD, 46));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				btnNewButton.setBackground(Color.CYAN);
-				btnNewButton.setText("X");
-				btnNewButton.setEnabled(false);
+				
+				/*
+				 * Ejemplo de la accion al presionar un boton
+				 */
+				
+				int jugador = getTurno();
+				
+				if(jugador == 1){
+					btnNewButton.setBackground(Color.CYAN);
+					btnNewButton.setText("X");
+					btnNewButton.setEnabled(false);
+				}else{
+					btnNewButton.setBackground(Color.ORANGE);
+					btnNewButton.setText("O");
+					btnNewButton.setEnabled(false);
+				}
+				
+				/*
+				 * 
+				 */
 			}
 		});
 		btnNewButton.setBounds(115, 12, 91, 77);
 		contentPane.add(btnNewButton);
 		
-		JButton btnNewButton_1 = new JButton("");
+		final JButton btnNewButton_1 = new JButton("");
 		btnNewButton_1.setFont(new Font("Dialog", Font.BOLD, 46));
 		btnNewButton_1.setBackground(SystemColor.activeCaptionBorder);
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				
+				/*
+				 * Ejemplo de la accion al presionar un boton
+				 */
+				
+				int jugador = getTurno();
+				
+				if(jugador == 1){
+					btnNewButton_1.setBackground(Color.CYAN);
+					btnNewButton_1.setText("X");
+					btnNewButton_1.setEnabled(false);
+				}else{
+					btnNewButton_1.setBackground(Color.ORANGE);
+					btnNewButton_1.setText("O");
+					btnNewButton_1.setEnabled(false);
+				}
+				
+				/*
+				 * 
+				 */
 			}
 		});
 		btnNewButton_1.setBounds(12, 12, 91, 77);
@@ -148,12 +195,17 @@ public class GUI extends JFrame {
 		lblTurno.setBounds(12, 278, 70, 15);
 		contentPane.add(lblTurno);
 		
-		textField = new JTextField();
-		textField.setForeground(Color.LIGHT_GRAY);
-		textField.setBackground(Color.LIGHT_GRAY);
-		textField.setEditable(false);
-		textField.setBounds(69, 278, 114, 19);
-		contentPane.add(textField);
-		textField.setColumns(10);
+	}
+	
+	public int getTurno(){
+		boolean turno = false;
+		int jugador;
+		if(turno){
+			jugador = 1;
+			return jugador;
+		}else{
+			jugador = 2;
+			return jugador;
+		}
 	}
 }
