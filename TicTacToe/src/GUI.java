@@ -43,7 +43,7 @@ public class GUI extends JFrame {
 	 */
 	public GUI() {
 		
-		final Turno jugador = new Turno(0);
+		final Turno jugador = new Turno();
 		
 		setTitle("TIC-TAC-TOE EXTREME");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -73,17 +73,18 @@ public class GUI extends JFrame {
 				 * Accion del boton por turno
 				 */
 				
+				int turno = jugador.getTurno();
 				
-				if(jugador.getTurno() == 1){
+				if(turno == 1){
 					btnNewButton.setBackground(Color.CYAN);
 					btnNewButton.setText("X");
 					btnNewButton.setEnabled(false);
-					jugador.setTurno(2);
-				}else if (jugador.getTurno()==2){
+					
+				}else{
 					btnNewButton.setBackground(Color.ORANGE);
 					btnNewButton.setText("O");
 					btnNewButton.setEnabled(false);
-					jugador.setTurno(1);
+					
 				}
 				
 				/*
@@ -104,18 +105,18 @@ public class GUI extends JFrame {
 				 * Accion del boton por turno
 				 */
 				
+				int turno = jugador.getTurno();
 				
-				if(jugador.getTurno() == 1){
+				if(turno == 1){
 					btnNewButton_1.setBackground(Color.CYAN);
 					btnNewButton_1.setText("X");
 					btnNewButton_1.setEnabled(false);
-					jugador.setTurno(2);
 					
-				}else if (jugador.getTurno()==2){
+				}else{
 					btnNewButton_1.setBackground(Color.ORANGE);
 					btnNewButton_1.setText("O");
 					btnNewButton_1.setEnabled(false);
-					jugador.setTurno(1);
+					
 				}
 				
 				/*
@@ -133,18 +134,19 @@ public class GUI extends JFrame {
 				 * Accion del boton por turno
 				 */
 				
+				int turno = jugador.getTurno();
 				
-				if(jugador.getTurno() == 1){
+				if(turno == 1){
 					btnNewButton_2.setBackground(Color.CYAN);
 					btnNewButton_2.setText("X");
 					btnNewButton_2.setEnabled(false);
-					jugador.setTurno(2);
 					
-				}else if (jugador.getTurno()==2){
+					
+				}else{
 					btnNewButton_2.setBackground(Color.ORANGE);
 					btnNewButton_2.setText("O");
 					btnNewButton_2.setEnabled(false);
-					jugador.setTurno(1);
+					
 				}
 				
 				/*
@@ -164,18 +166,19 @@ public class GUI extends JFrame {
 				 * Accion del boton por turno
 				 */
 				
+				int turno = jugador.getTurno();
 				
-				if(jugador.getTurno() == 1){
+				if(turno == 1){
 					btnNewButton_3.setBackground(Color.CYAN);
 					btnNewButton_3.setText("X");
 					btnNewButton_3.setEnabled(false);
-					jugador.setTurno(2);
 					
-				}else if (jugador.getTurno()==2){
+					
+				}else{
 					btnNewButton_3.setBackground(Color.ORANGE);
 					btnNewButton_3.setText("O");
 					btnNewButton_3.setEnabled(false);
-					jugador.setTurno(1);
+					
 				}
 				
 				/*
@@ -188,9 +191,31 @@ public class GUI extends JFrame {
 		btnNewButton_3.setBounds(12, 101, 91, 77);
 		contentPane.add(btnNewButton_3);
 		
-		JButton btnNewButton_4 = new JButton("");
+		final JButton btnNewButton_4 = new JButton("");
 		btnNewButton_4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				
+				/*
+				 * Accion del boton por turno
+				 */
+				
+				int turno = jugador.getTurno();
+				
+				if(turno == 1){
+					btnNewButton_4.setBackground(Color.CYAN);
+					btnNewButton_4.setText("X");
+					btnNewButton_4.setEnabled(false);
+					
+				}else{
+					btnNewButton_4.setBackground(Color.ORANGE);
+					btnNewButton_4.setText("O");
+					btnNewButton_4.setEnabled(false);
+					
+				}
+				
+				/*
+				 * 
+				 */
 			}
 		});
 		btnNewButton_4.setBackground(Color.LIGHT_GRAY);
@@ -198,9 +223,30 @@ public class GUI extends JFrame {
 		btnNewButton_4.setBounds(115, 103, 91, 77);
 		contentPane.add(btnNewButton_4);
 		
-		JButton btnNewButton_5 = new JButton("");
+		final JButton btnNewButton_5 = new JButton("");
 		btnNewButton_5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				/*
+				 * Accion del boton por turno
+				 */
+				
+				int turno = jugador.getTurno();
+				
+				if(turno == 1){
+					btnNewButton_5.setBackground(Color.CYAN);
+					btnNewButton_5.setText("X");
+					btnNewButton_5.setEnabled(false);
+					
+				}else{
+					btnNewButton_5.setBackground(Color.ORANGE);
+					btnNewButton_5.setText("O");
+					btnNewButton_5.setEnabled(false);
+					
+				}
+				
+				/*
+				 * 
+				 */
 			}
 		});
 		btnNewButton_5.setFont(new Font("Dialog", Font.BOLD, 46));
@@ -208,9 +254,30 @@ public class GUI extends JFrame {
 		btnNewButton_5.setBounds(218, 101, 91, 77);
 		contentPane.add(btnNewButton_5);
 		
-		JButton btnNewButton_6 = new JButton("");
+		final JButton btnNewButton_6 = new JButton("");
 		btnNewButton_6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				/*
+				 * Accion del boton por turno
+				 */
+				
+				int turno = jugador.getTurno();
+				
+				if(turno == 1){
+					btnNewButton_6.setBackground(Color.CYAN);
+					btnNewButton_6.setText("X");
+					btnNewButton_6.setEnabled(false);
+					
+				}else{
+					btnNewButton_6.setBackground(Color.ORANGE);
+					btnNewButton_6.setText("O");
+					btnNewButton_6.setEnabled(false);
+					
+				}
+				
+				/*
+				 * 
+				 */
 			}
 		});
 		btnNewButton_6.setBackground(Color.LIGHT_GRAY);
@@ -218,9 +285,30 @@ public class GUI extends JFrame {
 		btnNewButton_6.setBounds(12, 189, 91, 77);
 		contentPane.add(btnNewButton_6);
 		
-		JButton btnNewButton_7 = new JButton("");
+		final JButton btnNewButton_7 = new JButton("");
 		btnNewButton_7.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				/*
+				 * Accion del boton por turno
+				 */
+				
+				int turno = jugador.getTurno();
+				
+				if(turno == 1){
+					btnNewButton_7.setBackground(Color.CYAN);
+					btnNewButton_7.setText("X");
+					btnNewButton_7.setEnabled(false);
+					
+				}else{
+					btnNewButton_7.setBackground(Color.ORANGE);
+					btnNewButton_7.setText("O");
+					btnNewButton_7.setEnabled(false);
+					
+				}
+				
+				/*
+				 * 
+				 */
 			}
 		});
 		btnNewButton_7.setFont(new Font("Dialog", Font.BOLD, 46));
@@ -228,9 +316,30 @@ public class GUI extends JFrame {
 		btnNewButton_7.setBounds(115, 192, 91, 77);
 		contentPane.add(btnNewButton_7);
 		
-		JButton btnNewButton_8 = new JButton("");
+		final JButton btnNewButton_8 = new JButton("");
 		btnNewButton_8.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				/*
+				 * Accion del boton por turno
+				 */
+				
+				int turno = jugador.getTurno();
+				
+				if(turno == 1){
+					btnNewButton_8.setBackground(Color.CYAN);
+					btnNewButton_8.setText("X");
+					btnNewButton_8.setEnabled(false);
+					
+				}else{
+					btnNewButton_8.setBackground(Color.ORANGE);
+					btnNewButton_8.setText("O");
+					btnNewButton_8.setEnabled(false);
+					
+				}
+				
+				/*
+				 * 
+				 */
 			}
 		});
 		btnNewButton_8.setBackground(Color.LIGHT_GRAY);

@@ -1,23 +1,22 @@
 
 public class Turno {
 	
-	int turno;
+	int turno = 0;
 	
-	public Turno (int turno){
+	public Turno (){
 		this.turno = turno;
 	}
 	
-	public void setTurno(int turno){
+	public void setTurno(){
 		this.turno = turno;
 	}
 	
 	public int getTurno(){
-		if(turno == 0){
-			return 1;
-		}else if(turno == 2) {
-			return 1;
-		}else{
-			return 2;
+		switch(turno){
+		case 0: turno = 1; break;
+		case 1: turno = 2; break;
+		case 2: turno = 1; break;
 		}
+		return turno;
 	}
 }
